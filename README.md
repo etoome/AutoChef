@@ -8,6 +8,14 @@ Our app is divided into 4 main parts : Recipe, Agenda, Shopping list and Map.
 - Import your own recipes in JSON format;
 - Filter recipes with search bar;
 
+<div align="center">
+  <img width="975" src="https://github.com/etoome/AutoChef/blob/main/screenshots/recettes.png">
+</div>
+<div align="center">
+  <img width="487" src="https://github.com/etoome/AutoChef/blob/main/screenshots/recette.png">
+  <img width="487" src="https://github.com/etoome/AutoChef/blob/main/screenshots/recette_edit.png">
+</div>
+
 ### Agenda
 - Create, modify and delete agendas;
 - Create, modify and delete menus;
@@ -16,11 +24,19 @@ Our app is divided into 4 main parts : Recipe, Agenda, Shopping list and Map.
 - Generate a shopping list based on an agenda;
 - Filter recipes and menus with search bar;
 
+<div align="center">
+  <img width="975" src="https://github.com/etoome/AutoChef/blob/main/screenshots/agenda.png">
+</div>
+
 ### Shopping list
 - Create, modify and delete shopping lists;
 - Add products;
 - Archive shopping lists;
 - Export shopping list into pdf format;
+
+<div align="center">
+  <img width="975" src="https://github.com/etoome/AutoChef/blob/main/screenshots/listedecourse.png">
+</div>
 
 ### Map
 - Add and delete stores on the map;
@@ -30,6 +46,11 @@ Our app is divided into 4 main parts : Recipe, Agenda, Shopping list and Map.
 - Find the closest store that contains all products from a shopping list;
 - Find the cheapest store that contains all products from a shopping list;
 - Show the shortest path to a store;
+
+<div align="center">
+  <img width="732" src="https://github.com/etoome/AutoChef/blob/main/screenshots/carte.png">
+  <img width="243" src="https://github.com/etoome/AutoChef/blob/main/screenshots/market.png">
+</div>
 
 ## Libs
 - JavaFX
