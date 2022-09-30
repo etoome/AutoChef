@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<fx:root alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="210.0" styleClass="transparent" stylesheets="@../styles/main.css" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <HBox fx:id="fx_container" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" styleClass="container">
+      <children>
+         <Label fx:id="fx_labelMarket" graphicTextGap="17.0" prefHeight="50.0" prefWidth="167.0" onMouseClicked="#goToMarket" text="Label" textFill="#212121">
+            <font>
+               <Font name="Tahoma" size="15.0" />
+            </font>
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+            <padding>
+               <Insets left="7.0" />
+            </padding>
+         </Label>
+         <Label fx:id="fx_labelPriceShoppingList" prefHeight="16.0" prefWidth="70.0" textFill="#fbbf24">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+         <HBox alignment="CENTER" onMouseClicked="#deleteMarket">
+            <SVGPath fx:id="fx_delete" content="M20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Z" fill="#212121" />
+         </HBox>
+      </children>
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+   </HBox>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</fx:root>

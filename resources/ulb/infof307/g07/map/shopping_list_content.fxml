@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root type="javafx.scene.layout.VBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Liste de course" />
+      <ScrollPane fx:id="fx_shoppingListContentScrollArea" prefHeight="200.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+         <content>
+            <VBox fx:id="fx_shoppingListList" prefHeight="156.0" prefWidth="335.0" spacing="5.0" style="-fx-background-color: transparent; -fx-view-order: 5;" />
+         </content>
+      </ScrollPane>
+   </children>
+</fx:root>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulb.infof307.g07.controllers.agenda.AgendaController">
+   <fx:include fx:id="header" source="../layout/header.fxml" />
+   <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="639.0" prefWidth="970.0" style="-fx-background-color: #fafafa;" HBox.hgrow="ALWAYS">
+         <HBox fx:id="fx_optionsContainer" alignment="CENTER">
+            <HBox alignment="CENTER">
+               <HBox.margin>
+                  <Insets right="80.0" />
+               </HBox.margin>
+               <fx:include fx:id="listeditable" source="../components/listeditable.fxml" />
+            </HBox>
+            <VBox.margin>
+               <Insets bottom="15.0" top="15.0" />
+            </VBox.margin>
+         </HBox>
+         <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" styleClass="container" stylesheets="@../styles/main.css" VBox.vgrow="ALWAYS">
+            <VBox.margin>
+               <Insets bottom="10.0" left="8.0" />
+            </VBox.margin>
+            <HBox fx:id="fx_agendaContainer" layoutX="173.0" layoutY="110.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </AnchorPane>
+      </VBox>
+      <VBox maxWidth="300.0" minWidth="300.0" prefWidth="300.0" style="-fx-background-color: #fafafa;">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <VBox fx:id="fx_itemsContainer" alignment="TOP_CENTER" maxWidth="280.0" minWidth="280.0" prefWidth="280.0" style="-fx-background-color: #fafafa;" VBox.vgrow="ALWAYS">
+            <VBox.margin>
+               <Insets top="15.0" />
+            </VBox.margin>
+         </VBox>
+         <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="20.0">
+            <VBox.margin>
+               <Insets bottom="25.0" top="20.0" />
+            </VBox.margin>
+            <HBox alignment="CENTER" onMouseClicked="#onSaveClick" prefWidth="40.0" style="-fx-background-color: #fbbf24; -fx-background-radius: 10;">
+               <SVGPath content="m20.71 9.29l-6-6a1 1 0 0 0-.32-.21A1.09 1.09 0 0 0 14 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-8a1 1 0 0 0-.29-.71ZM9 5h4v2H9Zm6 14H9v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1Zm4-1a1 1 0 0 1-1 1h-1v-3a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v3H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.41l4 4Z" fill="#323232" />
+            </HBox>
+            <HBox alignment="CENTER" minWidth="100.0" onMouseClicked="#onCreateShoppingListClick" prefWidth="100.0" spacing="10.0" style="-fx-background-color: #fbbf24; -fx-background-radius: 10;">
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </padding>
+               <SVGPath content="M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 0 1 1 1ZM7 15a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0 4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Z" fill="#323232" />
+               <SVGPath content="M17.92 11.62a1 1 0 0 0-.21-.33l-5-5a1 1 0 0 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l5-5a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76Z" fill="#323232" />
+               <SVGPath content="M8.5 19a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 8.5 19ZM19 16H7a1 1 0 0 1 0-2h8.491a3.013 3.013 0 0 0 2.885-2.176l1.585-5.55A1 1 0 0 0 19 5H6.74a3.007 3.007 0 0 0-2.82-2H3a1 1 0 0 0 0 2h.921a1.005 1.005 0 0 1 .962.725l.155.545v.005l1.641 5.742A3 3 0 0 0 7 18h12a1 1 0 0 0 0-2Zm-1.326-9l-1.22 4.274a1.005 1.005 0 0 1-.963.726H8.754l-.255-.892L7.326 7ZM16.5 19a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z" fill="#323232" />
+            </HBox>
+         </HBox>
+      </VBox>
+   </HBox>
+</VBox>

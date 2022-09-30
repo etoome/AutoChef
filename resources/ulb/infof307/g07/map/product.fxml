@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="400.0" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+      <Label fx:id="fx_productName" prefHeight="26.0" prefWidth="556.0" text="product_name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_productPrice" prefHeight="26.0" prefWidth="316.0" text="price" textAlignment="RIGHT">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   <Label prefHeight="26.0" prefWidth="316.0" text="€" textAlignment="RIGHT">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <padding>
+      <Insets left="15.0" right="15.0" />
+   </padding>
+</fx:root>

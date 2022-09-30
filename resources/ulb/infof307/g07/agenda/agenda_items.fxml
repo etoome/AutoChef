@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root alignment="TOP_CENTER" prefWidth="250.0" spacing="5.0" type="javafx.scene.layout.VBox" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" spacing="5.0">
+      <fx:include fx:id="search" maxWidth="1.7976931348623157E308" source="../components/search.fxml" HBox.hgrow="ALWAYS" />
+   </HBox>
+   <VBox styleClass="container" stylesheets="@../styles/main.css" VBox.vgrow="ALWAYS">
+      <VBox.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </VBox.margin>
+      <ScrollPane fitToHeight="true" hbarPolicy="NEVER" prefHeight="505.0" prefWidth="216.0" stylesheets="@../styles/scrollpane.css" VBox.vgrow="ALWAYS">
+         <VBox fx:id="fx_recipeList" alignment="TOP_CENTER" prefHeight="594.0" spacing="6.0" style="-fx-background-color: #fafafa;">
+            <padding>
+               <Insets left="5.0" />
+            </padding></VBox>
+      </ScrollPane>
+   </VBox>
+</fx:root>

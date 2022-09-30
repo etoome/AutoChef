@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="fx_menuBlock" onDragDetected="#handleDragDetection" prefHeight="95.0" prefWidth="140.0" style="-fx-background-color: EEEEEE; -fx-border-color: FA9ABB; -fx-border-width: 3; -fx-border-style: hidden none solid none;" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <TextField fx:id="fx_menuText" alignment="CENTER" prefWidth="106.0" style="-fx-background-color: EEEEEE;" text="Menu" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <font>
+         <Font name="Tahoma" size="15.0" />
+      </font>
+   </TextField>
+   <VBox onMouseClicked="#showMenu" prefHeight="109.0" prefWidth="110.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="30.0">
+      <Label fx:id="fx_recipeNumber" alignment="TOP_LEFT" prefWidth="90.0" text="4 recettes" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_recipeList" alignment="TOP_LEFT" prefWidth="90.0" text="Plat, entrée, boisson" textAlignment="CENTER">
+         <font>
+            <Font name="Tahoma" size="13.0" />
+         </font>
+      </Label>
+   </VBox>
+   <VBox alignment="CENTER" layoutX="90.0" layoutY="22.0" prefHeight="26.0" prefWidth="26.0" spacing="22.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <HBox alignment="CENTER" onMouseClicked="#saveMenuClick">
+         <children>
+            <SVGPath content="m20.71 9.29l-6-6a1 1 0 0 0-.32-.21A1.09 1.09 0 0 0 14 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-8a1 1 0 0 0-.29-.71ZM9 5h4v2H9Zm6 14H9v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1Zm4-1a1 1 0 0 1-1 1h-1v-3a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v3H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.41l4 4Z" fill="#212121" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" onMouseClicked="#deleteMenuClick">
+         <children>
+            <SVGPath content="M20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Z" fill="#212121" />
+         </children>
+      </HBox>
+   </VBox>
+   <padding>
+      <Insets left="2.0" />
+   </padding>
+</fx:root>

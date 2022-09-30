@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="85.0" prefWidth="240.0" style="-fx-background-color: EEEEEE; -fx-border-color: FA9ABB; -fx-border-width: 3; -fx-border-style: hidden none solid none; -fx-background-radius: 8; -fx-border-radius: 8;" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="90.0" prefWidth="200.0">
+      <VBox fx:id="fx_clickZone" onDragDetected="#handleDragDetection" onMouseClicked="#onMenuClick" prefHeight="90.0" prefWidth="169.0">
+         <Label fx:id="fx_titleName" prefHeight="40.0" prefWidth="195.0" text="Menu" textAlignment="CENTER" textFill="#212121">
+            <font>
+               <Font name="Tahoma" size="20.0" />
+            </font>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            <padding>
+               <Insets left="12.0" />
+            </padding>
+         </Label>
+         <Label fx:id="fx_recipeNumber" prefHeight="20.0" prefWidth="195.0" text="nombre recette">
+            <font>
+               <Font name="Tahoma" size="15.0" />
+            </font>
+            <padding>
+               <Insets left="12.0" />
+            </padding>
+         </Label>
+         <Label fx:id="fx_recipeList" prefHeight="20.0" prefWidth="195.0" text="type de plats">
+            <font>
+               <Font name="Tahoma" size="15.0" />
+            </font>
+            <padding>
+               <Insets left="12.0" />
+            </padding>
+         </Label>
+      </VBox>
+      <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="90.0" prefWidth="29.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <HBox alignment="CENTER" onMouseClicked="#deleteMenuClick">
+            <children>
+               <SVGPath content="M20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Z" fill="#212121" scaleX="1.05" scaleY="1.05" />
+            </children>
+         </HBox>
+      </HBox>
+   </AnchorPane>
+</fx:root>

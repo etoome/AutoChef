@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root prefHeight="670.0" prefWidth="640.0" style="-fx-background-color: #fafafa;" styleClass="main" stylesheets="@../styles/main.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <VBox spacing="15.0" VBox.vgrow="ALWAYS">
+      <VBox.margin>
+         <Insets left="20.0" right="20.0" top="5.0" />
+      </VBox.margin>
+      <GridPane hgap="10.0" vgap="10.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text fill="#212121" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre personnes" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1">
+               <children>
+                  <Label fx:id="fx_people" text="4" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Text fill="#212121" strokeType="OUTSIDE" strokeWidth="0.0" text="Duree" textAlignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="fx_time" text="25">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#212121" strokeType="OUTSIDE" strokeWidth="0.0" text="minutes">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <Text fill="#212121" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" textAlignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#212121" strokeType="OUTSIDE" strokeWidth="0.0" text="Style" textAlignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Text>
+            <Label fx:id="fx_type" text="Plat" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="fx_style" text="vegan" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <VBox alignment="CENTER" minHeight="150.0" styleClass="container" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <HBox alignment="CENTER">
+            <children>
+               <Text fill="#212121" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrédients">
+                  <font>
+                     <Font name="Tahoma" size="15.0" />
+                  </font>
+               </Text>
+            </children>
+            <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+         </HBox>
+         <Separator prefWidth="200.0" />
+         <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@../styles/scrollpane.css" HBox.hgrow="ALWAYS">
+               <VBox fx:id="fx_ingredients" prefHeight="200.0" prefWidth="100.0" />
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </ScrollPane>
+         </HBox>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" minHeight="225.0" styleClass="container" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <HBox alignment="CENTER">
+            <children>
+               <Text fill="#212121" strokeType="OUTSIDE" strokeWidth="0.0" text="Instructions">
+                  <font>
+                     <Font name="Tahoma" size="15.0" />
+                  </font>
+               </Text>
+            </children>
+            <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+         </HBox>
+         <Separator prefWidth="200.0" />
+         <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="arrow" VBox.vgrow="ALWAYS">
+            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@../styles/scrollpane.css" HBox.hgrow="ALWAYS">
+               <VBox fx:id="fx_instruction" prefHeight="200.0" prefWidth="100.0" />
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ScrollPane>
+         </HBox>
+      </VBox>
+   </VBox>
+   <HBox alignment="CENTER_RIGHT">
+      <VBox.margin>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+      </VBox.margin>
+      <HBox alignment="CENTER" onMouseClicked="#onEditClick">
+         <SVGPath fx:id="fx_edit" content="M21 12a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1Zm-15 .76V17a1 1 0 0 0 1 1h4.24a1 1 0 0 0 .71-.29l6.92-6.93L21.71 8a1 1 0 0 0 0-1.42l-4.24-4.29a1 1 0 0 0-1.42 0l-2.82 2.83l-6.94 6.93a1 1 0 0 0-.29.71Zm10.76-8.35l2.83 2.83l-1.42 1.42l-2.83-2.83ZM8 13.17l5.93-5.93l2.83 2.83L10.83 16H8Z" fill="#212121" />
+      </HBox>
+   </HBox>
+</fx:root>

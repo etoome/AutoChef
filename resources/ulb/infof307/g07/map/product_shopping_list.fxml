@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="210.0" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="fx_shoppingListProduct" prefHeight="50.0" prefWidth="146.0" text="Produit">
+         <HBox.margin>
+            <Insets left="5.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="fx_shoppingListQuantity" prefHeight="50.0" prefWidth="62.0" text="qty" HBox.hgrow="NEVER">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Label>
+   </children>
+</fx:root>

@@ -1,0 +1,216 @@
+/* COLORS */
+
+* {
+  -fx-theme-background: #f3f4f6;
+  -fx-theme-primary: #f9fafb;
+  -fx-theme-secondary: #d1d5db;
+  -fx-theme-accent: #fbbf24;
+  -fx-theme-text: #4b5563;
+}
+
+/* MAIN */
+
+.transparent {
+  -fx-background-color: transparent;
+}
+
+.main {
+  -fx-background-color: -fx-theme-background;
+}
+
+.tab {
+  -fx-font-weight: normal;
+}
+
+.tab:disabled {
+  -fx-font-weight: bold;
+}
+
+.container {
+  -fx-background-color: -fx-theme-primary;
+  -fx-border-color: -fx-theme-secondary;
+  -fx-border-width: 2px;
+  -fx-border-radius: 6px;
+  -fx-background-radius: 6px;
+}
+
+.container-highlight {
+  -fx-background-color: -fx-theme-primary;
+  -fx-border-color: -fx-theme-accent;
+  -fx-border-width: 2px;
+  -fx-border-radius: 6px;
+  -fx-background-radius: 6px;
+}
+
+.container-clean {
+  -fx-background-color: -fx-theme-primary;
+  -fx-border-width: 0px;
+}
+
+/* MODAL */
+
+.modal {
+  -fx-background-color: -fx-theme-primary;
+  -fx-border-color: -fx-theme-secondary;
+  -fx-border-width: 2px;
+  -fx-border-radius: 6px;
+  -fx-background-radius: 6px;
+}
+
+/* DIALOG */
+
+.dialog {
+  -fx-background-color: -fx-theme-background;
+}
+
+.dialog > *.button-bar > *.container {
+  -fx-background-color: -fx-theme-background;
+  -fx-border-width: 0px;
+  -fx-border-radius: 0px;
+  -fx-background-radius: 0px;
+}
+
+.dialog > *.label.content {
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-fill: -fx-theme-text;
+}
+
+.dialog *.header-panel {
+  -fx-background-color: -fx-theme-background;
+}
+
+.dialog *.header-panel *.label {
+  -fx-font-size: 18px;
+  -fx-font-style: italic;
+  -fx-fill: -fx-theme-text;
+}
+
+/* ICON */
+
+.icon:disabled {
+  -fx-opacity: 0.5;
+}
+
+/* BUTTON */
+
+.button {
+  -fx-background-color: -fx-theme-accent;
+  -fx-background-radius: 6px;
+  -fx-font-weight: 500;
+  -fx-fill: -fx-theme-text;
+}
+
+/* CORNER BUTTON */
+
+.corner-button,
+.corner-button-alt {
+  -fx-background-color: -fx-theme-primary;
+  -fx-border-color: -fx-theme-secondary;
+  -fx-border-width: 2px;
+}
+
+.corner-button {
+  -fx-border-radius: 6px 0px 6px 0px;
+}
+.corner-button-alt {
+  -fx-border-radius: 0px 6px 0px 6px;
+}
+
+/* TEXT */
+
+.input_text {
+  -fx-background-color: -fx-theme-primary;
+  -fx-border-color: -fx-theme-secondary;
+  -fx-border-radius: 4px;
+  -fx-text-fill: -fx-theme-text;
+  -fx-text-inner-color: -fx-theme-text;
+}
+
+.input_textarea {
+  -fx-background-color: -fx-theme-primary;
+  -fx-border-color: -fx-theme-secondary;
+  -fx-border-radius: 4px;
+  -fx-text-fill: -fx-theme-text;
+  -fx-text-inner-color: -fx-theme-text;
+}
+
+.input_textarea .content {
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+}
+
+/* COMBO BOX  - DATE PICKER */
+
+.combo-box,
+.date-picker {
+  -fx-background-color: -fx-theme-primary;
+  -fx-border-color: -fx-theme-secondary;
+  -fx-border-radius: 4px;
+  -fx-text-fill: -fx-theme-text;
+  -fx-text-inner-color: -fx-theme-text;
+}
+
+.combo-box .arrow-button,
+.date-picker .arrow-button {
+  -fx-background-color: -fx-theme-primary;
+  -fx-border-color: -fx-theme-secondary;
+  -fx-border-width: 0;
+}
+
+.combo-box .arrow,
+.date-picker .arrow {
+  -fx-background-color: -fx-theme-text;
+}
+
+.combo-box .text-field,
+.date-picker .text-field {
+  -fx-background-color: -fx-theme-primary;
+}
+
+/* CHECKBOX */
+
+.checkbox .box {
+  -fx-background-color: -fx-theme-primary;
+  -fx-border-color: -fx-theme-secondary;
+  -fx-border-radius: 4px;
+  -fx-background-radius: 4px;
+}
+
+.checkbox .mark {
+  -fx-shape: "M18.71 7.21a1 1 0 0 0-1.42 0l-7.45 7.46l-3.13-3.14A1 1 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z";
+}
+
+.checkbox:selected .mark {
+  -fx-background-color: -fx-theme-text;
+}
+
+.checkbox:selected .box {
+  -fx-background-color: -fx-theme-accent;
+  -fx-border-color: transparent;
+  -fx-border-radius: 4px;
+  -fx-background-radius: 4px;
+}
+
+/* EDITABLE */
+
+.editable-hidden:disabled {
+  -fx-opacity: 0;
+}
+
+.editable:disabled,
+.editable:disabled > * {
+  -fx-opacity: 1;
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+}
+
+.editable:disabled .arrow {
+  -fx-background-color: transparent;
+}
+
+/* DISABLE */
+
+.disable:disabled {
+  -fx-opacity: 0;
+}

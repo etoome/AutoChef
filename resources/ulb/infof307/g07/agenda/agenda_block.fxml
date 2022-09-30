@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root alignment="TOP_CENTER" onDragDropped="#handleDropRecipe" prefHeight="500.0" prefWidth="146.0" spacing="5.0" style="-fx-background-color: #fafafa;" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <Label fx:id="fx_dayName" text="day" textFill="#212121">
+        <font>
+          <Font size="15.0" />
+        </font>
+        <VBox.margin>
+          <Insets top="5.0" />
+        </VBox.margin>
+    </Label>
+   <Label fx:id="fx_dayDate" text="day" textFill="#424242">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <ScrollPane fx:id="fx_scrollPane" fitToWidth="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onDragOver="#handleDragOverRecipe" stylesheets="@../styles/scrollpane.css" VBox.vgrow="ALWAYS">
+      <content>
+           <VBox fx:id="fx_agendaBlocks" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onDragOver="#handleDragOverRecipe" spacing="1.0" style="-fx-background-color: #fafafa; -fx-border-color: #212121; -fx-border-style: solid none none none;" />
+      </content>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="20.0" left="3.0" right="3.0" />
+      </padding>
+   </ScrollPane>
+</fx:root>
